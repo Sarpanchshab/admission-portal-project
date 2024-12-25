@@ -1,0 +1,80 @@
+<<%- include("./header.ejs") %>
+
+    <%- include("./sidebar.ejs") %>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Update Profile</h1>
+                        </div><!-- /.col -->
+                        <% if(msg.length>0){ %>
+                            <div class="alert alert-danger">
+                                <!--To Print-->
+                                <%= msg %>
+                            </div>
+                            <% }%>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Update Profile</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="col-2"></div>
+
+                        <div class="col-8">
+                        
+                            <form action="/admin/update_profile/<%= id %>" method="post" enctype="multipart/form-data">
+                                <div class="col-8">
+                                <div class="mb-3">
+                                    <label for="">Name</label>
+                                    <input type="text" value="<%= n %>" name="name" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Email</label>
+                                    <input type="text" value="<%= e %>" name="email" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Image</label>
+                                    <input type="file"  name="image" class="form-control">
+                                    <img src="<%= i.url %>" alt="" width="50">
+                                </div>
+                                
+                                <button type="submit" class="btn btn-success">Update Profile</button>
+        
+                            </form>
+                        </div>
+
+                        <div class="col-2"></div>
+                        
+
+                    </div>
+                    <!-- /.card-body -->
+
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+
+
+
+
+
+
+        <%- include("./footer.ejs") %>>

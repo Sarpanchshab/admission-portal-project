@@ -1,0 +1,125 @@
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+body{
+    background:#a2f07b8e !important;
+}
+
+/* ::placeholder{
+    color: gray !important;
+    font-weight: lighter;
+}
+
+label{
+    padding-top: 10% !important;
+} */
+
+button{
+    background: #24faf7 !important;
+}
+
+/* ---------------------------------------------------------------
+                            #navbar
+------------------------------------------------------------------ */
+
+#navbar nav{
+    background: #0000009c !important;
+}
+
+.webViewPosition{
+    text-align: start !important;
+}
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight{
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+.bglogin{
+    background: #faee90;
+}
+
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer
+{
+    background-color: #1c1c1c; /* Dark gray background */
+    color: #000000; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff; /* White links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+#social{
+    background: rgb(184, 189, 189);
+}
+
+#detail p{
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label
+{
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Contact
+------------------------------------------------------------------ */
+.contact-form {
+    background-color: #72f878;
+    border: 5px solid rgb(255, 255, 255); /* Border color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8); /* 3D shadow effect */
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover{
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3), -8px -8px 16px rgba(255, 255, 255, 0.6); /* Enhanced shadow on hover */
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11{
+        justify-content: center !important;
+    }
+
+    .mobileViewButton{
+        background: white !important;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
