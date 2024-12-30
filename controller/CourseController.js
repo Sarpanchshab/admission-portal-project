@@ -111,7 +111,7 @@ class CourseController{
     
           auth: {
             user: "monu1999june@gmail.com",
-            pass: "cyxw tlxw qmva cqpw",
+            pass: "qjbq fyjm eyru gcrz",
           },
         });
         let info = await transporter.sendMail({
